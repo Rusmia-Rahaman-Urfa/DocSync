@@ -1,4 +1,1 @@
-https://<your-service>.onrender.com
-
-# After deploying to Render, replace the line above with the live URL.
-# Keep this file in the submission folder so reviewers can find the link without opening the README.
+https://docsync-kxwo.onrender.com

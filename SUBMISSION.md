@@ -2,7 +2,7 @@
 
 **Project:** DocSync — a lightweight collaborative document editor
 **Candidate:** _your name_
-**Live demo:** `https://<your-service>.onrender.com` ← replace with the Render URL after deploying
+**Live demo:** https://docsync-kxwo.onrender.com
 **Walkthrough video:** see [`VIDEO_URL.txt`](VIDEO_URL.txt)
 **Demo password (all accounts):** `demo1234`
 
@@ -17,7 +17,7 @@
 | Architecture note | [`ARCHITECTURE.md`](ARCHITECTURE.md) | ✅ |
 | AI workflow note | [`AI_WORKFLOW.md`](AI_WORKFLOW.md) | ✅ |
 | Submission manifest | `SUBMISSION.md` (this file) | ✅ |
-| Live product URL | Render deployment — replace the placeholder above | ⬜ after deploy |
+| Live product URL | https://docsync-kxwo.onrender.com | ✅ deployed |
 | Walkthrough video URL | [`VIDEO_URL.txt`](VIDEO_URL.txt) | ⬜ after recording |
 | Screenshots | [`docs/screenshots/`](docs/screenshots) | ✅ (5 screenshots) |
 | Deployment config | `Dockerfile`, `render.yaml`, `.env.example` | ✅ |
@@ -34,6 +34,14 @@
 | Cara Lin | `cara@ajaia.dev` | `demo1234` | Starts with no access — use to test an invite |
 
 The login page lists all three as one-click buttons, so no typing is required.
+
+## Deployment status
+
+- **URL:** https://docsync-kxwo.onrender.com
+- **Platform:** Render free tier, native Node runtime, provisioned from `render.yaml`
+- **Verified live:** `/healthz` returns 200, Ana signs in and sees 2 owned + 1 shared document, Markdown export returns 200, Quill assets load, and anonymous API access returns 401
+- **Cold start:** 30–60 seconds after the free instance has been idle
+- **Storage:** ephemeral on the free plan — a redeploy or long idle period can reset to the seeded demo data (documented in the README)
 
 ## Run locally
 

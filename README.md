@@ -4,7 +4,8 @@
 
 A small, working collaborative document editor built for the Ajaia AI-native full stack assignment. Create a document, format it, import Markdown or plain text, share it with a teammate as a viewer or editor, and come back to it later — everything persists.
 
-**Live demo:** `https://<your-service>.onrender.com` _(replace after deploying — see [Deploying to Render](#deploying-to-render))_
+**Live demo:** https://docsync-kxwo.onrender.com
+
 **Demo password for every seeded account:** `demo1234`
 
 ![Document list](docs/screenshots/02-documents.png)
@@ -125,7 +126,7 @@ The repo includes a Render Blueprint (`render.yaml`) that uses Render's native N
 2. In Render: **New + → Blueprint**, select the repo. Render reads `render.yaml` and creates a Node web service with a generated `SESSION_SECRET`, `COOKIE_SECURE=true`, and a health check at `/healthz`.
    - Manual alternative: **New + → Web Service → Node**, build `npm ci --omit=dev`, start `node src/server.js`, health check `/healthz`, add `SESSION_SECRET` and `DOCSYNC_DATA_DIR=/opt/render/project/src/data`.
 3. Wait for the first deploy, open the URL, and sign in with a seeded account. The first boot seeds the demo data automatically.
-4. Replace the placeholder live URL in this README, `SUBMISSION.md`, and `VIDEO_URL.txt` with your service URL.
+4. The deployment URL for this submission is **https://docsync-kxwo.onrender.com** (recorded at the top of this README and in `LIVE_URL.txt`).
 
 ### Free-tier behaviour (important)
 

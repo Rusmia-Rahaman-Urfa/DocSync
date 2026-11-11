@@ -1,5 +1,7 @@
 # DocSync
 
+[![CI](https://github.com/Rusmia-Rahaman-Urfa/DocSync/actions/workflows/ci.yml/badge.svg)](https://github.com/Rusmia-Rahaman-Urfa/DocSync/actions/workflows/ci.yml)
+
 A small, working collaborative document editor built for the Ajaia AI-native full stack assignment. Create a document, format it, import Markdown or plain text, share it with a teammate as a viewer or editor, and come back to it later — everything persists.
 
 **Live demo:** `https://<your-service>.onrender.com` _(replace after deploying — see [Deploying to Render](#deploying-to-render))_

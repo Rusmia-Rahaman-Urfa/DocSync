@@ -172,7 +172,22 @@ try {
   const importedText = await page.locator('.ql-editor').innerText();
   assert(importedText.includes('Imported by smoke'), 'markdown import opened a new document');
 
-  // 10. Export produces a download
+  // 10. Rename via the title field, save with the keyboard shortcut, reload
+  await page.locator('#doc-title').fill('Imported by smoke (renamed)');
+  await page.keyboard.press('Control+S');
+  await page.waitForFunction(
+    () => document.querySelector('#save-status')?.textContent.trim().startsWith('Saved'),
+    null,
+    { timeout: 15000 },
+  );
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.waitForSelector('#doc-title');
+  assert(
+    (await page.locator('#doc-title').inputValue()) === 'Imported by smoke (renamed)',
+    'renamed title survived a reload',
+  );
+
+  // 11. Export produces a download
   const [download] = await Promise.all([
     page.waitForEvent('download'),
     page.locator('a', { hasText: 'Export .md' }).click(),

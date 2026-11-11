@@ -65,7 +65,7 @@ The SQLite database and demo data are created automatically at `data/docsync.db`
 - **Owned vs shared:** separate sidebar sections, role badges, and owner attribution on every card.
 - **Export:** any collaborator can download the document as Markdown.
 - **Quality:** validation on every input, consistent JSON error envelope, security headers, CSP, 2 MB upload cap, 200k character content cap.
-- **Tests:** 7 API integration tests and a 10-step real-browser smoke test, both green.
+- **Tests:** 7 API integration tests and a real-browser smoke test, both green.
 
 ## What is intentionally incomplete
 

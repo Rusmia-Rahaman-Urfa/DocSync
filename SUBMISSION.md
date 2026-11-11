@@ -1,9 +1,9 @@
 # Submission
 
 **Project:** DocSync — a lightweight collaborative document editor
-**Candidate:** _your name_
+**Candidate:** Rusmia Rahaman Urfa
 **Live demo:** https://docsync-kxwo.onrender.com
-**Walkthrough video:** see [`VIDEO_URL.txt`](VIDEO_URL.txt)
+**Walkthrough video:** https://drive.google.com/file/d/1ye98OsL0Csa0r6n0RK3Kj4pq3e_8ZziU/view (also in [`VIDEO_URL.txt`](VIDEO_URL.txt))
 **Demo password (all accounts):** `demo1234`
 
 ---
@@ -18,7 +18,7 @@
 | AI workflow note | [`AI_WORKFLOW.md`](AI_WORKFLOW.md) | ✅ |
 | Submission manifest | `SUBMISSION.md` (this file) | ✅ |
 | Live product URL | https://docsync-kxwo.onrender.com | ✅ deployed |
-| Walkthrough video URL | [`VIDEO_URL.txt`](VIDEO_URL.txt) | ⬜ after recording |
+| Walkthrough video URL | [`VIDEO_URL.txt`](VIDEO_URL.txt) | ✅ recorded |
 | Screenshots | [`docs/screenshots/`](docs/screenshots) | ✅ (5 screenshots) |
 | Deployment config | `Dockerfile`, `render.yaml`, `.env.example` | ✅ |
 | Automated tests | `test/api.test.js`, `scripts/smoke.mjs` | ✅ |
@@ -99,8 +99,8 @@ The SQLite database and demo data are created automatically at `data/docsync.db`
 ## Suggested Google Drive folder layout
 
 ```
-DocSync — <your name>/
-├── source/                    # this repository (zip or folder)
+DocSync — Rusmia Rahaman Urfa/
+├── DocSync-source.zip         # this repository (37 tracked files, no node_modules/data)
 ├── README.md
 ├── ARCHITECTURE.md
 ├── AI_WORKFLOW.md
@@ -115,7 +115,7 @@ DocSync — <your name>/
     └── 05-imported.png
 ```
 
-The source archive should exclude `node_modules/` and `data/`. Both are gitignored and are recreated by `npm install` and the first boot.
+The source archive excludes `node_modules/` and `data/`. Both are gitignored and are recreated by `npm install` and the first boot. `git archive --format=zip -o DocSync-source.zip HEAD` produces exactly this archive.
 
 ## Reviewer path (about two minutes)
 

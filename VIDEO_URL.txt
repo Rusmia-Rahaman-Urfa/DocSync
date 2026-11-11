@@ -1,4 +1,6 @@
-PASTE_YOUR_UNLISTED_VIDEO_URL_HERE
+https://drive.google.com/file/d/1ye98OsL0Csa0r6n0RK3Kj4pq3e_8ZziU/view?usp=sharing
 
-# Example:
-# https://www.loom.com/share/xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+# Walkthrough video — Google Drive, shared so that anyone with the link can view.
+# Runs through the flow described in VIDEO_SCRIPT.md against the live deployment:
+# login, rich-text editing with autosave, sharing as owner/editor/viewer,
+# Markdown import and export, plus the scope and AI-workflow notes.

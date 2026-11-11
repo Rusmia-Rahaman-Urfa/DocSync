@@ -6,6 +6,8 @@ A small, working collaborative document editor built for the Ajaia AI-native ful
 
 **Live demo:** https://docsync-kxwo.onrender.com
 
+**Walkthrough video:** https://drive.google.com/file/d/1ye98OsL0Csa0r6n0RK3Kj4pq3e_8ZziU/view
+
 **Demo password for every seeded account:** `demo1234`
 
 ![Document list](docs/screenshots/02-documents.png)

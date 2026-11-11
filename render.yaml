@@ -1,0 +1,35 @@
+# Render Blueprint — https://render.com/docs/blueprint-spec
+#
+# Deploy: push this repo to GitHub, then in Render choose
+#   New + -> Blueprint -> select the repo.
+#
+# Uses Render's native Node runtime (no Docker build required). A Dockerfile is
+# also included for other platforms.
+#
+# Free tier note: the filesystem is ephemeral. Documents survive refreshes and
+# normal use, but a redeploy or long idle period can restart the service with an
+# empty disk, which re-runs the demo seed. Attach the disk below (paid instance
+# types) for durable storage.
+services:
+  - type: web
+    name: docsync
+    runtime: node
+    plan: free
+    region: oregon
+    buildCommand: npm ci --omit=dev
+    startCommand: node src/server.js
+    healthCheckPath: /healthz
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: COOKIE_SECURE
+        value: "true"
+      - key: DOCSYNC_DATA_DIR
+        value: /opt/render/project/src/data
+      - key: SESSION_SECRET
+        generateValue: true
+    # disk:
+    #   name: docsync-data
+    #   mountPath: /opt/render/project/src/data
+    #   sizeGB: 1

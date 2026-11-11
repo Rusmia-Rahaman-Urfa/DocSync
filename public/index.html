@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="DocSync — a lightweight collaborative document editor." />
+    <title>DocSync</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234f46e5'/%3E%3Cpath d='M20 16h16l8 8v24H20z' fill='white'/%3E%3Cpath d='M36 16v8h8' fill='%23c7d2fe'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="/vendor/quill.snow.css" />
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <div id="app" class="app-loading">
+      <div class="boot">Loading DocSync…</div>
+    </div>
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+    <script src="/vendor/quill.js"></script>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>

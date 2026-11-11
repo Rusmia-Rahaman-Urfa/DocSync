@@ -1,0 +1,24 @@
+{
+  "name": "docsync",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A lightweight collaborative document editor built for the Ajaia AI-native full stack assignment.",
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "smoke": "node scripts/smoke.mjs",
+    "seed": "node src/seed-cli.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "multer": "^2.5.0"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.65.0"
+  }
+}

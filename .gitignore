@@ -4,3 +4,12 @@ data/
 *.log
 .DS_Store
 Thumbs.db
+
+# SQLite artifacts (defence in depth in case the data dir moves)
+*.db
+*.db-wal
+*.db-shm
+.session-secret
+
+# Tooling output
+coverage/
